@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/animations/aurora-background";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,9 +26,11 @@ export default function Home() {
         <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4">
           This is our internal tools site! gtfo if you not supposed to be here
         </div>
-        <Button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-          Portfolio
-        </Button>
+        <Link href="/portfolio">
+          <Button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
+            Portfolio
+          </Button>
+        </Link>
       </motion.div>
     </AuroraBackground>
     // </main>
