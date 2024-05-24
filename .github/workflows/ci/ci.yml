@@ -28,7 +28,7 @@ jobs:
         run: |
           sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }} << EOF
             cd /var/www/
-            git pull origin main
+            git pull origin master
             npm ci
             npm run build
             # Assuming you're using PM2 for process management
