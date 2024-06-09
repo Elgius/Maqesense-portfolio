@@ -31,9 +31,9 @@ export default function Home() {
             Portfolio
           </Button>
         </Link>
-        <Link href="/test">
+        <Link href="/tools">
           <Button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-            Test
+            Important links
           </Button>
         </Link>
       </motion.div>
