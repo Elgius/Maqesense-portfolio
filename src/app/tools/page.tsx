@@ -1,7 +1,7 @@
 import React from "react";
 import { Dock, DockIcon } from "@/components/magicui/docker";
 
-export type IconProps = React.HtmlHTMLAttributes<SVGAElement>;
+export type IconProps = React.HtmlHTMLAttributes<SVGElement>;
 
 function page() {
   return (
