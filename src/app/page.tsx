@@ -36,6 +36,11 @@ export default function Home() {
             Important links
           </Button>
         </Link>
+        <Link href="http://localhost:5173/">
+          <Button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
+            Dashboard
+          </Button>
+        </Link>
       </motion.div>
     </AuroraBackground>
     // </main>
