@@ -39,18 +39,22 @@ export default function TodoTable() {
   }, []);
 
   return (
-    <Table>
-      <TableCaption>Note: contact Qalif for queries</TableCaption>
-      <TableHeader>
-        <TableRow>
-          <TableHead className="w-[100px]">Task ID</TableHead>
-          <TableHead>Person in charge</TableHead>
-          <TableHead>Tasks</TableHead>
-          <TableHead>Start date</TableHead>
-          <TableHead>Deadline</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>{generateTableRows(data)}</TableBody>
-    </Table>
+    <section className="container">
+      <div className="flex sm:flex-col">
+        <Table>
+          <TableCaption>Note: contact Qalif for queries</TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[100px] hidden">Task ID</TableHead>
+              <TableHead>Person in charge</TableHead>
+              <TableHead>Tasks</TableHead>
+              <TableHead>Start date</TableHead>
+              <TableHead>Deadline</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>{generateTableRows(data)}</TableBody>
+        </Table>
+      </div>
+    </section>
   );
 }
